@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 | Qifan Yang</title>
+    <meta
+      name="description"
+      content="404 page for Qifan Yang's personal website."
+    />
+    <link rel="icon" href="./assets/icons/favicon.svg?v=20260313" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .not-found-panel {
+        min-height: calc(100vh - 130px);
+        display: grid;
+        place-items: center;
+        padding: 40px 24px;
+      }
+
+      .not-found-card {
+        width: min(760px, 100%);
+        text-align: center;
+      }
+
+      .not-found-code {
+        display: inline-block;
+        margin-bottom: 18px;
+        padding: 10px 16px;
+        border: 1px solid rgba(20, 20, 20, 0.08);
+        border-radius: 999px;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      .not-found-card h1 {
+        margin-bottom: 18px;
+        font-size: clamp(48px, 8vw, 92px);
+      }
+
+      .not-found-card p {
+        max-width: 640px;
+        margin: 0 auto 28px;
+        font-size: clamp(17px, 2.1vw, 22px);
+        line-height: 1.65;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <img
+            class="brand-avatar"
+            src="./assets/images/IMG_0901.jpg?v=20260313"
+            alt="Portrait of Qifan Yang"
+          />
+          <span class="brand-mark"></span>
+          <span data-i18n="brandName">Qifan Yang</span>
+        </a>
+        <nav class="site-nav">
+          <a href="./index.html#about" data-i18n="navAbout">About</a>
+          <a href="./index.html#experience" data-i18n="navExperience">Experience</a>
+          <a href="./index.html#projects" data-i18n="navProjects">Projects</a>
+          <a href="./index.html#contact" data-i18n="navContact">Contact</a>
+        </nav>
+        <button class="lang-toggle" type="button" aria-label="Switch language">
+          中文
+        </button>
+      </header>
+
+      <main class="hero-panel not-found-panel">
+        <section class="not-found-card">
+          <div class="not-found-code">404</div>
+          <h1 data-i18n="title">This page wandered off.</h1>
+          <p data-i18n="body">
+            The page you are looking for does not exist, may have moved, or the
+            link is outdated. Go back to the homepage and continue browsing the
+            site.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="./index.html" data-i18n="primaryCta">
+              Back Home
+            </a>
+            <a
+              class="button button-secondary"
+              href="./index.html#projects"
+              data-i18n="secondaryCta"
+            >
+              View Projects
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const translations = {
+        en: {
+          brandName: "Qifan Yang",
+          navAbout: "About",
+          navExperience: "Experience",
+          navProjects: "Projects",
+          navContact: "Contact",
+          title: "This page wandered off.",
+          body: "The page you are looking for does not exist, may have moved, or the link is outdated. Go back to the homepage and continue browsing the site.",
+          primaryCta: "Back Home",
+          secondaryCta: "View Projects"
+        },
+        zh: {
+          brandName: "杨启帆",
+          navAbout: "关于我",
+          navExperience: "经历",
+          navProjects: "项目",
+          navContact: "联系",
+          title: "这个页面走丢了。",
+          body: "你访问的页面不存在，可能已经被移动，或者链接已经失效。你可以先返回首页，再继续浏览网站内容。",
+          primaryCta: "返回首页",
+          secondaryCta: "查看项目"
+        }
+      };
+
+      const toggle = document.querySelector(".lang-toggle");
+      const nodes = document.querySelectorAll("[data-i18n]");
+      let language = "en";
+
+      function applyLanguage(nextLanguage) {
+        language = nextLanguage;
+        document.documentElement.lang = nextLanguage === "en" ? "en" : "zh-CN";
+
+        for (const node of nodes) {
+          const key = node.dataset.i18n;
+          const value = translations[nextLanguage][key];
+          if (value) {
+            node.textContent = value;
+          }
+        }
+
+        toggle.textContent = nextLanguage === "en" ? "中文" : "EN";
+      }
+
+      toggle.addEventListener("click", () => {
+        applyLanguage(language === "en" ? "zh" : "en");
+      });
+
+      applyLanguage("en");
+    </script>
+  </body>
+</html>
