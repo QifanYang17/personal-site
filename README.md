@@ -10,7 +10,7 @@
 [![i18n](https://img.shields.io/badge/i18n-EN%20%7C%20中文-green?style=flat-square)]()
 [![Responsive](https://img.shields.io/badge/Responsive-Mobile%20%7C%20Tablet%20%7C%20Desktop-blue?style=flat-square)]()
 
-[English](#-features) · [中文](#-特性)
+[English](#-features) · [中文](#中文版)
 
 </div>
 
@@ -156,6 +156,7 @@ Then open [http://localhost:8000](http://localhost:8000).
 
 ---
 
+<a id="中文版"></a>
 <div align="center">
 
 # ✨ 杨启帆 — 个人作品集网站
