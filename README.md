@@ -18,9 +18,9 @@
 
 ## 📸 Preview
 
-> Add a screenshot here: place an image at `assets/images/preview.png` and uncomment the line below.
+<!-- > Add a screenshot here: place an image at `assets/images/preview.png` and uncomment the line below. -->
 
-<!-- ![Site Preview](assets/images/preview.png) -->
+![Site Preview](assets/images/preview.png)
 
 ---
 
