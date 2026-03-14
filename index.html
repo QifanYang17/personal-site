@@ -8,8 +8,8 @@
       name="description"
       content="Personal website for Qifan Yang, focused on data science, AI agents, machine learning, and analytics."
     />
-    <link rel="icon" href="./assets/icons/favicon.svg?v=20260313" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=20260313" />
+    <link rel="icon" href="./assets/icons/favicon.svg?v=ebf8687" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=20260313-github" />
   </head>
   <body>
     <div class="page-shell">
@@ -17,7 +17,7 @@
         <a class="brand" href="#top">
           <img
             class="brand-avatar"
-            src="./assets/images/IMG_0901.jpg?v=20260313"
+            src="./assets/images/IMG_0901.jpg?v=ebf8687"
             alt="Portrait of Qifan Yang"
           />
           <span class="brand-mark"></span>
@@ -29,9 +29,20 @@
           <a href="#projects" data-i18n="navProjects">Projects</a>
           <a href="#contact" data-i18n="navContact">Contact</a>
         </nav>
-        <button class="lang-toggle" type="button" aria-label="Switch language">
-          中文
-        </button>
+        <div class="site-actions">
+          <a
+            class="github-link"
+            href="https://github.com/QifanYang17"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="github-link-label" data-i18n="githubLinkLabel">GitHub</span>
+            <span class="github-link-handle">QifanYang17</span>
+          </a>
+          <button class="lang-toggle" type="button" aria-label="Switch language">
+            中文
+          </button>
+        </div>
       </header>
 
       <main id="top">
@@ -132,72 +143,6 @@
           </article>
         </section>
 
-        <section class="panel timeline-panel" id="experience">
-          <div class="panel-head">
-            <p class="section-tag" data-i18n="experienceTag">Experience</p>
-            <h2 data-i18n="experienceTitle">Internships across data science, engineering, and analytics.</h2>
-          </div>
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="timeline-header">
-                <span class="timeline-logo-frame">
-                  <img class="timeline-logo" src="./assets/images/bosch_logo.jpg?v=20260313" alt="" />
-                </span>
-                <div class="timeline-header-copy">
-                  <div class="timeline-meta">
-                    <span data-i18n="exp1Company">Bosch China Innovation & Software Development Campus</span>
-                    <span data-i18n="exp1Date">Jul 2024 - Jul 2025</span>
-                  </div>
-                  <h3 data-i18n="exp1Title">ADAS Data Scientist Intern</h3>
-                </div>
-              </div>
-              <p data-i18n="exp1Body">
-                Built text-to-image retrieval and VLM automation workflows for over one million
-                perception images, automated evaluation and labeling QC, and developed reusable
-                scripts for JSON and sensor data processing.
-              </p>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-header">
-                <span class="timeline-logo-frame">
-                  <img class="timeline-logo" src="./assets/images/bosch_logo.jpg?v=20260313" alt="" />
-                </span>
-                <div class="timeline-header-copy">
-                  <div class="timeline-meta">
-                    <span data-i18n="exp2Company">Bosch Powertrain Systems Co., Ltd.</span>
-                    <span data-i18n="exp2Date">Jun 2023 - Sep 2023</span>
-                  </div>
-                  <h3 data-i18n="exp2Title">Vehicle Driving Data Analyst Intern</h3>
-                </div>
-              </div>
-              <p data-i18n="exp2Body">
-                Built engine pump performance prediction models with scikit-learn, used PCA and
-                feature analysis for variable selection, and designed a data cleaning pipeline
-                for real vehicle driving data.
-              </p>
-            </article>
-            <article class="timeline-item">
-              <div class="timeline-header">
-                <span class="timeline-logo-frame">
-                  <img class="timeline-logo" src="./assets/images/uber_logo.jpg?v=20260313" alt="" />
-                </span>
-                <div class="timeline-header-copy">
-                  <div class="timeline-meta">
-                    <span data-i18n="exp3Company">Uber Technologies, Inc.</span>
-                    <span data-i18n="exp3Date">Sep 2022 - Dec 2022</span>
-                  </div>
-                  <h3 data-i18n="exp3Title">Operations Data Analyst Intern</h3>
-                </div>
-              </div>
-              <p data-i18n="exp3Body">
-                Cleaned and analyzed 850K+ feedback and operational records, ran A/B testing,
-                built predictive modeling pipelines, and created KPI visualizations to support
-                service optimization.
-              </p>
-            </article>
-          </div>
-        </section>
-
         <section class="panel education-panel education-panel-wide">
           <div class="panel-head">
             <p class="section-tag" data-i18n="educationTag">Education</p>
@@ -207,7 +152,7 @@
             <article class="education-strip-card">
               <div class="education-card-head">
                 <span class="education-logo-frame">
-                  <img class="education-logo" src="./assets/images/northwestern_logo.png?v=20260313" alt="" />
+                  <img class="education-logo" src="./assets/images/northwestern_logo.png?v=ebf8687" alt="" />
                 </span>
                 <div>
                   <h3 data-i18n="edu1Title">Northwestern University</h3>
@@ -218,7 +163,7 @@
             <article class="education-strip-card">
               <div class="education-card-head">
                 <span class="education-logo-frame">
-                  <img class="education-logo" src="./assets/images/ucdavis_logo.png?v=20260313" alt="" />
+                  <img class="education-logo" src="./assets/images/ucdavis_logo.png?v=ebf8687" alt="" />
                 </span>
                 <div>
                   <h3 data-i18n="edu2Title">University of California, Davis</h3>
@@ -242,6 +187,162 @@
           </div>
         </section>
 
+        <section class="panel timeline-panel" id="experience">
+          <div class="panel-head">
+            <p class="section-tag" data-i18n="experienceTag">Experience</p>
+            <h2 data-i18n="experienceTitle">Internships across data science, engineering, and analytics.</h2>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-header">
+                <span class="timeline-logo-frame">
+                  <img class="timeline-logo" src="./assets/images/bosch_logo.jpg?v=ebf8687" alt="" />
+                </span>
+                <div class="timeline-header-copy">
+                  <div class="timeline-meta">
+                    <span data-i18n="exp1Company">Bosch China Innovation & Software Development Campus</span>
+                    <span data-i18n="exp1Date">Jul 2024 - Jul 2025</span>
+                  </div>
+                  <h3 data-i18n="exp1Title">ADAS Data Scientist Intern</h3>
+                </div>
+              </div>
+              <p data-i18n="exp1Body">
+                Built text-to-image retrieval and VLM automation workflows for over one million
+                perception images, automated evaluation and labeling QC, and developed reusable
+                scripts for JSON and sensor data processing.
+              </p>
+              <ul class="timeline-detail-list">
+                <li data-i18n="exp1Detail1">Integrated requests, qcloud_cos, yaml, PIL, and Qwen2.5 into a text-to-image retrieval workflow for 1M+ perception images, complex traffic scene mining, and automated VLM inference.</li>
+                <li data-i18n="exp1Detail2">Automated model evaluation through temporal filtering, score thresholds, and COS-based image caching, and used FiftyOne for labeling QC to reduce manual review time by around 30%.</li>
+                <li data-i18n="exp1Detail3">Developed reusable Python scripts for multi-million JSON and sensor datasets, including parsing, timestamp alignment, rule-based validation, time-series filtering, and metadata extraction.</li>
+                <li data-i18n="exp1Detail4">Trained a YOLOv9 object detection model with OpenCV on million-scale autonomous driving image data, reaching 94% accuracy and 93% recall.</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-header">
+                <span class="timeline-logo-frame">
+                  <img class="timeline-logo" src="./assets/images/bosch_logo.jpg?v=ebf8687" alt="" />
+                </span>
+                <div class="timeline-header-copy">
+                  <div class="timeline-meta">
+                    <span data-i18n="exp2Company">Bosch Powertrain Systems Co., Ltd.</span>
+                    <span data-i18n="exp2Date">Jun 2023 - Sep 2023</span>
+                  </div>
+                  <h3 data-i18n="exp2Title">Vehicle Driving Data Analyst Intern</h3>
+                </div>
+              </div>
+              <p data-i18n="exp2Body">
+                Built engine pump performance prediction models with scikit-learn, used PCA and
+                feature analysis for variable selection, and designed a data cleaning pipeline
+                for real vehicle driving data.
+              </p>
+              <ul class="timeline-detail-list">
+                <li data-i18n="exp2Detail1">Built an engine pump performance prediction workflow in Scikit-learn, comparing Linear Regression, LASSO, Ridge, ElasticNet, Random Forest, and Gradient Boosting models.</li>
+                <li data-i18n="exp2Detail2">Applied PCA and feature standardization to reduce multicollinearity, and used feature importance, explained variance, and correlation analysis to identify key sensor variables.</li>
+                <li data-i18n="exp2Detail3">Collected real driving-condition data with INCA and built a Pandas preprocessing pipeline covering missing values, outlier detection, and normalization.</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-header">
+                <span class="timeline-logo-frame">
+                  <img class="timeline-logo" src="./assets/images/uber_logo.jpg?v=ebf8687" alt="" />
+                </span>
+                <div class="timeline-header-copy">
+                  <div class="timeline-meta">
+                    <span data-i18n="exp3Company">Uber Technologies, Inc.</span>
+                    <span data-i18n="exp3Date">Sep 2022 - Dec 2022</span>
+                  </div>
+                  <h3 data-i18n="exp3Title">Operations Data Analyst Intern</h3>
+                </div>
+              </div>
+              <p data-i18n="exp3Body">
+                Cleaned and analyzed 850K+ feedback and operational records, ran A/B testing,
+                built predictive modeling pipelines, and created KPI visualizations to support
+                service optimization.
+              </p>
+              <ul class="timeline-detail-list">
+                <li data-i18n="exp3Detail1">Cleaned and integrated 850K+ user feedback and operational records with Pandas, and applied NLTK-based sentiment analysis to quantify user satisfaction trends.</li>
+                <li data-i18n="exp3Detail2">Designed and analyzed A/B tests to evaluate scheduling strategies and service process improvements through statistical testing.</li>
+                <li data-i18n="exp3Detail3">Built predictive modeling workflows for user demand and operational metrics using LASSO, ElasticNet, and PCA for feature selection and dimensionality reduction.</li>
+                <li data-i18n="exp3Detail4">Trained and compared Random Forest, Gradient Boosting, and CNN models, improving generalization with K-fold cross-validation and hyperparameter tuning.</li>
+                <li data-i18n="exp3Detail5">Evaluated model performance with MAE, RMSE, ROC-AUC, and F1 Score, and created Matplotlib KPI visualizations for operational trend analysis.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel research-panel">
+          <div class="panel-head">
+            <p class="section-tag" data-i18n="researchTag">Research</p>
+            <h2 data-i18n="researchTitle">Research studies in transformers, 3D perception, and autonomous driving.</h2>
+          </div>
+          <div class="research-grid">
+            <article class="research-card">
+              <div class="research-meta">
+                <span data-i18n="research1Kicker">Independent Study</span>
+                <span data-i18n="research1Meta">Computer Vision · Transformers</span>
+              </div>
+              <h3 data-i18n="research1Title">DETR Architecture Study & Implementation</h3>
+              <div class="card-media card-media-research">
+                <img
+                  src="./assets/images/object_detection.png?v=ebf8687"
+                  data-i18n-alt="research1Alt"
+                  alt="Object detection example with labeled cars, person, bicycle, and traffic light"
+                />
+              </div>
+              <p data-i18n="research1Body">
+                Studied and implemented the DETR (Detection Transformer) architecture, analyzing
+                encoder-decoder transformers, multi-head attention, QKV projections, and
+                feed-forward networks to understand end-to-end transformer-based object detection
+                without anchor boxes or NMS.
+              </p>
+              <ul class="project-detail-list">
+                <li data-i18n="research1Detail1">Implemented the core encoder-decoder transformer flow to understand object queries and set prediction.</li>
+                <li data-i18n="research1Detail2">Analyzed multi-head attention, QKV projection logic, and FFN blocks at the module level.</li>
+                <li data-i18n="research1Detail3">Compared DETR's end-to-end design against anchor-based and NMS-dependent detection pipelines.</li>
+              </ul>
+              <div class="chip-row">
+                <span>DETR</span>
+                <span data-i18n="research1Chip2">Transformers</span>
+                <span data-i18n="research1Chip3">Multi-Head Attention</span>
+                <span data-i18n="research1Chip4">Object Detection</span>
+              </div>
+            </article>
+            <article class="research-card">
+              <div class="research-meta">
+                <span data-i18n="research2Kicker">Research Presentation</span>
+                <span data-i18n="research2Meta">Computer Vision · Autonomous Driving</span>
+              </div>
+              <h3 data-i18n="research2Title">3D Occupancy Perception Research</h3>
+              <div class="card-media card-media-diagram">
+                <img
+                  src="./assets/images/occupancy.png?v=ebf8687"
+                  data-i18n-alt="research2Alt"
+                  alt="3D occupancy perception diagram from multi-camera images and LiDAR points"
+                />
+              </div>
+              <p data-i18n="research2Body">
+                Studied vision-based 3D occupancy prediction methods for autonomous driving,
+                analyzing voxel scene representations, semantic occupancy prediction, annotation
+                pipelines, and the trade-offs between different perception architectures.
+              </p>
+              <ul class="project-detail-list">
+                <li data-i18n="research2Detail1">Studied semantic occupancy prediction from multi-view camera images and voxel-based scene representations.</li>
+                <li data-i18n="research2Detail2">Examined depth inference, voxel-grid computation cost, and LiDAR-derived annotation challenges.</li>
+                <li data-i18n="research2Detail3">Compared BEV-based, TPV-based, and voxel-based modeling paradigms across capability and efficiency.</li>
+                <li data-i18n="research2Detail4">Analyzed label refinement methods including KNN voting, VDBFusion reconstruction, and image-guided voxel refinement.</li>
+                <li data-i18n="research2Detail5">Presented the paper and led discussion on vision-based vs LiDAR-based perception trade-offs and applications.</li>
+              </ul>
+              <div class="chip-row">
+                <span data-i18n="research2Chip1">3D Occupancy</span>
+                <span>BEV</span>
+                <span>TPV</span>
+                <span data-i18n="research2Chip4">Autonomous Driving</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
         <section class="panel project-panel" id="projects">
           <div class="panel-head">
             <p class="section-tag" data-i18n="projectsTag">Projects</p>
@@ -254,7 +355,7 @@
               <div class="project-card-showcase-grid">
                 <div class="card-media card-media-phone">
                   <img
-                    src="./assets/images/rxpal.jpg?v=20260313"
+                    src="./assets/images/rxpal.jpg?v=ebf8687"
                     data-i18n-alt="project4Alt"
                     alt="RxPal medication management mobile interface"
                   />
@@ -313,14 +414,14 @@
               <div class="project-media-stack">
                 <div class="card-media card-media-landscape">
                   <img
-                    src="./assets/images/chicago_crime.png?v=20260313"
+                    src="./assets/images/chicago_crime.png?v=ebf8687"
                     data-i18n-alt="project2Alt"
                     alt="Chicago crime map visualization with choropleth and highlighted locations"
                   />
                 </div>
                 <div class="card-media card-media-landscape">
                   <img
-                    src="./assets/images/chicago_crime_2.png?v=20260313"
+                    src="./assets/images/chicago_crime_2.png?v=ebf8687"
                     data-i18n-alt="project2Alt2"
                     alt="Chicago crime analysis map with district-level overlays and highlighted points"
                   />
@@ -366,78 +467,6 @@
           </div>
         </section>
 
-        <section class="panel research-panel">
-          <div class="panel-head">
-            <p class="section-tag" data-i18n="researchTag">Research</p>
-            <h2 data-i18n="researchTitle">Research studies in transformers, 3D perception, and autonomous driving.</h2>
-          </div>
-          <div class="research-grid">
-            <article class="research-card">
-              <div class="research-meta">
-                <span data-i18n="research1Kicker">Independent Study</span>
-                <span data-i18n="research1Meta">Computer Vision · Transformers</span>
-              </div>
-              <h3 data-i18n="research1Title">DETR Architecture Study & Implementation</h3>
-              <div class="card-media card-media-research">
-                <img
-                  src="./assets/images/object_detection.png?v=20260313"
-                  data-i18n-alt="research1Alt"
-                  alt="Object detection example with labeled cars, person, bicycle, and traffic light"
-                />
-              </div>
-              <p data-i18n="research1Body">
-                Studied and implemented the DETR (Detection Transformer) architecture, analyzing
-                encoder-decoder transformers, multi-head attention, QKV projections, and
-                feed-forward networks to understand end-to-end transformer-based object detection
-                without anchor boxes or NMS.
-              </p>
-              <ul class="project-detail-list">
-                <li data-i18n="research1Detail1">Implemented the core encoder-decoder transformer flow to understand object queries and set prediction.</li>
-                <li data-i18n="research1Detail2">Analyzed multi-head attention, QKV projection logic, and FFN blocks at the module level.</li>
-                <li data-i18n="research1Detail3">Compared DETR's end-to-end design against anchor-based and NMS-dependent detection pipelines.</li>
-              </ul>
-              <div class="chip-row">
-                <span>DETR</span>
-                <span data-i18n="research1Chip2">Transformers</span>
-                <span data-i18n="research1Chip3">Multi-Head Attention</span>
-                <span data-i18n="research1Chip4">Object Detection</span>
-              </div>
-            </article>
-            <article class="research-card">
-              <div class="research-meta">
-                <span data-i18n="research2Kicker">Research Presentation</span>
-                <span data-i18n="research2Meta">Computer Vision · Autonomous Driving</span>
-              </div>
-              <h3 data-i18n="research2Title">3D Occupancy Perception Research</h3>
-              <div class="card-media card-media-diagram">
-                <img
-                  src="./assets/images/occupancy.png?v=20260313"
-                  data-i18n-alt="research2Alt"
-                  alt="3D occupancy perception diagram from multi-camera images and LiDAR points"
-                />
-              </div>
-              <p data-i18n="research2Body">
-                Studied vision-based 3D occupancy prediction methods for autonomous driving,
-                analyzing voxel scene representations, semantic occupancy prediction, annotation
-                pipelines, and the trade-offs between different perception architectures.
-              </p>
-              <ul class="project-detail-list">
-                <li data-i18n="research2Detail1">Studied semantic occupancy prediction from multi-view camera images and voxel-based scene representations.</li>
-                <li data-i18n="research2Detail2">Examined depth inference, voxel-grid computation cost, and LiDAR-derived annotation challenges.</li>
-                <li data-i18n="research2Detail3">Compared BEV-based, TPV-based, and voxel-based modeling paradigms across capability and efficiency.</li>
-                <li data-i18n="research2Detail4">Analyzed label refinement methods including KNN voting, VDBFusion reconstruction, and image-guided voxel refinement.</li>
-                <li data-i18n="research2Detail5">Presented the paper and led discussion on vision-based vs LiDAR-based perception trade-offs and applications.</li>
-              </ul>
-              <div class="chip-row">
-                <span data-i18n="research2Chip1">3D Occupancy</span>
-                <span>BEV</span>
-                <span>TPV</span>
-                <span data-i18n="research2Chip4">Autonomous Driving</span>
-              </div>
-            </article>
-          </div>
-        </section>
-
         <section class="panel interests-panel">
           <div class="interests-head">
             <div class="panel-head">
@@ -464,28 +493,28 @@
           <div class="interest-grid">
             <article class="interest-card">
               <div class="interest-visual violin-visual">
-                <img class="interest-illustration" src="./assets/icons/icon-violin.svg?v=20260313" alt="" />
+                <img class="interest-illustration" src="./assets/icons/icon-violin.svg?v=ebf8687" alt="" />
               </div>
               <h3 data-i18n="interest1Title">Violin</h3>
               <p data-i18n="interest1Body">A way to stay patient, expressive, and detail-oriented.</p>
             </article>
             <article class="interest-card">
               <div class="interest-visual basketball-visual">
-                <img class="interest-illustration" src="./assets/icons/icon-basketball.svg?v=20260313" alt="" />
+                <img class="interest-illustration" src="./assets/icons/icon-basketball.svg?v=ebf8687" alt="" />
               </div>
               <h3 data-i18n="interest2Title">Basketball</h3>
               <p data-i18n="interest2Body">Competition, teamwork, and rhythm still matter off the screen.</p>
             </article>
             <article class="interest-card">
               <div class="interest-visual history-visual">
-                <img class="interest-illustration" src="./assets/icons/icon-history.svg?v=20260313" alt="" />
+                <img class="interest-illustration" src="./assets/icons/icon-history.svg?v=ebf8687" alt="" />
               </div>
               <h3 data-i18n="interest3Title">History</h3>
               <p data-i18n="interest3Body">I enjoy long-context stories, patterns, and cause-effect thinking.</p>
             </article>
             <article class="interest-card">
               <div class="interest-visual f1-visual">
-                <img class="interest-illustration" src="./assets/icons/icon-f1.svg?v=20260313" alt="" />
+                <img class="interest-illustration" src="./assets/icons/icon-f1.svg?v=ebf8687" alt="" />
               </div>
               <h3 data-i18n="interest4Title">Formula 1</h3>
               <p data-i18n="interest4Body">A perfect mix of systems thinking, speed, engineering, and strategy.</p>
@@ -507,6 +536,6 @@
       </main>
     </div>
 
-    <script src="./script.js?v=20260313"></script>
+    <script src="./script.js?v=20260313-github"></script>
   </body>
 </html>

@@ -8,8 +8,8 @@
       name="description"
       content="404 page for Qifan Yang's personal website."
     />
-    <link rel="icon" href="./assets/icons/favicon.svg?v=20260313" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./assets/icons/favicon.svg?v=ebf8687" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css?v=20260313-github" />
     <style>
       .not-found-panel {
         min-height: calc(100vh - 130px);
@@ -55,7 +55,7 @@
         <a class="brand" href="./index.html">
           <img
             class="brand-avatar"
-            src="./assets/images/IMG_0901.jpg?v=20260313"
+            src="./assets/images/IMG_0901.jpg?v=ebf8687"
             alt="Portrait of Qifan Yang"
           />
           <span class="brand-mark"></span>
@@ -67,9 +67,20 @@
           <a href="./index.html#projects" data-i18n="navProjects">Projects</a>
           <a href="./index.html#contact" data-i18n="navContact">Contact</a>
         </nav>
-        <button class="lang-toggle" type="button" aria-label="Switch language">
-          中文
-        </button>
+        <div class="site-actions">
+          <a
+            class="github-link"
+            href="https://github.com/QifanYang17"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="github-link-label" data-i18n="githubLinkLabel">GitHub</span>
+            <span class="github-link-handle">QifanYang17</span>
+          </a>
+          <button class="lang-toggle" type="button" aria-label="Switch language">
+            中文
+          </button>
+        </div>
       </header>
 
       <main class="hero-panel not-found-panel">
@@ -105,6 +116,7 @@
           navExperience: "Experience",
           navProjects: "Projects",
           navContact: "Contact",
+          githubLinkLabel: "GitHub",
           title: "This page wandered off.",
           body: "The page you are looking for does not exist, may have moved, or the link is outdated. Go back to the homepage and continue browsing the site.",
           primaryCta: "Back Home",
@@ -116,6 +128,7 @@
           navExperience: "经历",
           navProjects: "项目",
           navContact: "联系",
+          githubLinkLabel: "GitHub",
           title: "这个页面走丢了。",
           body: "你访问的页面不存在，可能已经被移动，或者链接已经失效。你可以先返回首页，再继续浏览网站内容。",
           primaryCta: "返回首页",

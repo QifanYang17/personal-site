@@ -8,6 +8,7 @@ const translations = {
     navExperience: "Experience",
     navProjects: "Projects",
     navContact: "Contact",
+    githubLinkLabel: "GitHub",
     heroBadge: "Northwestern MSDS · AI Track",
     floatingNote: "AI agents, data systems, and ideas that ship.",
     floatingChip: "Python · SQL · ML",
@@ -44,17 +45,41 @@ const translations = {
     exp1Date: "Jul 2024 - Jul 2025",
     exp1Title: "ADAS Data Scientist Intern",
     exp1Body:
-      "Built text-to-image retrieval and VLM automation workflows for over one million perception images, automated evaluation and labeling QC, and developed reusable scripts for JSON and sensor data processing.",
+      "Built large-scale ADAS data and model automation workflows spanning text-to-image retrieval, VLM inference, dataset processing, and object detection across million-image autonomous driving datasets.",
+    exp1Detail1:
+      "Integrated requests, qcloud_cos, yaml, PIL, and Qwen2.5 into a text-to-image retrieval pipeline to support text-generated image retrieval for over one million perception images, complex traffic scene mining, and automated VLM inference.",
+    exp1Detail2:
+      "Automated model evaluation with temporal filtering, score thresholding, and COS-based image caching, and leveraged FiftyOne for labeling quality checks to reduce manual review time by around 30%.",
+    exp1Detail3:
+      "Developed reusable Python scripts for multi-million JSON and sensor datasets, implementing parsing, timestamp alignment, rule-based validation, time-series filtering, and metadata extraction to improve data integrity and reduce preprocessing latency by around 10%.",
+    exp1Detail4:
+      "Trained a YOLOv9 object detection model with OpenCV on million-level autonomous driving image data, reaching 94% accuracy and 93% recall.",
     exp2Company: "Bosch Powertrain Systems Co., Ltd.",
     exp2Date: "Jun 2023 - Sep 2023",
     exp2Title: "Vehicle Driving Data Analyst Intern",
     exp2Body:
-      "Built engine pump performance prediction models with scikit-learn, used PCA and feature analysis for variable selection, and designed a data cleaning pipeline for real vehicle driving data.",
+      "Built engine pump performance modeling and vehicle data analytics workflows by combining regression and ensemble modeling with dimensionality reduction on real driving-condition datasets.",
+    exp2Detail1:
+      "Built an engine pump performance prediction model using Scikit-learn, training and comparing Linear Regression, LASSO, Ridge, ElasticNet, Random Forest, and Gradient Boosting models while applying PCA and feature standardization to reduce multicollinearity and improve stability.",
+    exp2Detail2:
+      "Identified key sensor variables through feature importance analysis, PCA explained variance, and correlation analysis, providing data-driven support for sensor configuration optimization and cost reduction.",
+    exp2Detail3:
+      "Collected real vehicle driving-condition data with INCA and built a Pandas data cleaning and preprocessing pipeline covering missing value handling, outlier detection, and normalization.",
     exp3Company: "Uber Technologies, Inc.",
     exp3Date: "Sep 2022 - Dec 2022",
     exp3Title: "Operations Data Analyst Intern",
     exp3Body:
-      "Cleaned and analyzed 850K+ feedback and operational records, ran A/B testing, built predictive modeling pipelines, and created KPI visualizations to support service optimization.",
+      "Built operational analytics and predictive modeling workflows on 850K+ user feedback and operational records to support customer experience analysis, experimentation, and KPI tracking.",
+    exp3Detail1:
+      "Cleaned and integrated 850K+ user feedback and operational records using Pandas, and applied NLTK-based sentiment analysis to quantify user satisfaction trends and support customer experience analysis.",
+    exp3Detail2:
+      "Designed and analyzed A/B tests to evaluate scheduling strategies and service process improvements, using statistical tests to measure their impact on order completion rates and user satisfaction.",
+    exp3Detail3:
+      "Built a data science modeling pipeline to predict user demand and operational metrics, applying LASSO and ElasticNet regularization with PCA for feature selection and dimensionality reduction.",
+    exp3Detail4:
+      "Trained and compared Random Forest, Gradient Boosting, and CNN models, improving model generalization through K-fold cross-validation and hyperparameter tuning.",
+    exp3Detail5:
+      "Evaluated models with MAE, RMSE, ROC-AUC, and F1 Score, and developed Matplotlib-based KPI visualizations to analyze operational trends.",
     projectsTag: "Projects",
     projectsTitle: "Selected work",
     project4Title: "RxPal (此间有序) — WeChat Mini-Program for Elderly Health Management",
@@ -170,6 +195,7 @@ const translations = {
     navExperience: "经历",
     navProjects: "项目",
     navContact: "联系",
+    githubLinkLabel: "GitHub",
     heroBadge: "西北大学 数据科学硕士 · AI方向",
     floatingNote: "把 AI、数据系统和想法做成真正可用的东西。",
     floatingChip: "Python · SQL · 机器学习",
@@ -206,17 +232,41 @@ const translations = {
     exp1Date: "2024.07 - 2025.07",
     exp1Title: "博世 ADAS 数据科学实习生",
     exp1Body:
-      "搭建面向百万级感知图像的文本检索与 VLM 自动化流程，完成模型评估与标注质检自动化，并开发可复用脚本处理 JSON 和传感器数据。",
+      "围绕百万级自动驾驶图像数据，搭建了覆盖文本检索、VLM 推理、数据处理与目标检测训练的 ADAS 数据与模型自动化流程。",
+    exp1Detail1:
+      "将 requests、qcloud_cos、yaml、PIL 和 Qwen2.5 集成到自动化文本到图像检索流程中，实现超过 100 万张感知图像的文本生成图像检索、复杂交通场景数据挖掘与 VLM 推理自动化。",
+    exp1Detail2:
+      "通过时间序列过滤、得分阈值筛选与 COS 图像缓存实现模型评估自动化；利用 FiftyOne 进行标注质检，减少约 30% 审核时间。",
+    exp1Detail3:
+      "开发多种可复用 Python 脚本处理数百万级 JSON 与传感器数据集，实施解析、时间戳对齐、基于规则的校验、时间序列过滤与元数据提取，提升数据完整性并将预处理延迟降低约 10%。",
+    exp1Detail4:
+      "使用 OpenCV 在百万级自动驾驶图像数据集上训练 YOLOv9 目标检测模型，达到 94% 精确度与 93% 召回率。",
     exp2Company: "博世动力总成有限公司",
     exp2Date: "2023.06 - 2023.09",
     exp2Title: "博世 车辆驾驶数据分析实习生",
     exp2Body:
-      "基于 scikit-learn 构建发动机泵性能预测模型，使用 PCA 和特征分析识别关键变量，并建立真实车辆工况数据清洗与预处理流程。",
+      "围绕发动机泵性能预测与车辆工况数据分析，搭建了从建模比较到变量筛选再到原始数据清洗的完整分析流程。",
+    exp2Detail1:
+      "基于 Scikit-learn 构建发动机泵性能预测模型，训练并比较 Linear Regression、LASSO、Ridge、ElasticNet 与 Random Forest / Gradient Boosting 模型，结合 PCA 降维与特征标准化缓解多重共线性并提升模型稳定性。",
+    exp2Detail2:
+      "通过特征重要性分析、PCA 方差贡献率与相关性分析识别关键传感器变量，为传感器配置优化与成本控制提供数据依据。",
+    exp2Detail3:
+      "使用 INCA 采集真实车辆行驶工况数据，通过 Pandas 构建包括缺失值处理、异常值检测与数据标准化的清理与预处理流程。",
     exp3Company: "优步",
     exp3Date: "2022.09 - 2022.12",
     exp3Title: "优步运营数据分析实习生",
     exp3Body:
-      "清洗分析 85 万+ 用户反馈与运营记录，设计 A/B Test，搭建预测建模流程，并通过 KPI 可视化支持服务优化。",
+      "围绕 85 万+ 条用户反馈与运营记录，搭建了从情感分析、实验评估到预测建模与 KPI 可视化的运营分析流程。",
+    exp3Detail1:
+      "使用 Pandas 清洗与整合 85 万+ 条用户反馈与运营数据，并结合 NLTK 情感分析量化用户满意度趋势，支持客户体验分析。",
+    exp3Detail2:
+      "设计并分析 A/B Test 实验评估调度策略与服务流程优化效果，通过统计检验验证策略对订单完成率与用户满意度的影响。",
+    exp3Detail3:
+      "构建数据科学建模流程对用户需求与运营指标进行预测建模，应用 LASSO / ElasticNet 正则化与 PCA 进行特征选择与降维。",
+    exp3Detail4:
+      "训练并比较 Random Forest / Gradient Boosting 和 CNN 等模型，并通过 K-fold 交叉验证与超参数调优提升模型泛化能力。",
+    exp3Detail5:
+      "使用 MAE、RMSE、ROC-AUC 与 F1 Score 进行模型评估，并利用 Matplotlib 构建运营 KPI 可视化与运营趋势分析。",
     projectsTag: "项目",
     projectsTitle: "代表项目",
     project4Title: "此间有序（RxPal）— 老年健康管理微信小程序",

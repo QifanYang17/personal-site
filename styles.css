@@ -97,6 +97,49 @@ html[lang="zh-CN"] .brand {
   color: var(--muted);
 }
 
+.site-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.github-link-label {
+  color: var(--muted);
+}
+
+.github-link-handle {
+  position: relative;
+  padding-left: 12px;
+}
+
+.github-link-handle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--text);
+  transform: translateY(-50%);
+}
+
 .lang-toggle {
   border: 0;
   border-radius: 999px;
@@ -436,6 +479,10 @@ h2 {
   background: rgba(255, 255, 255, 0.6);
 }
 
+.timeline-item > p {
+  margin-bottom: 14px;
+}
+
 .timeline-header {
   display: flex;
   gap: 14px;
@@ -589,6 +636,17 @@ h2 {
   padding-left: 18px;
   color: var(--muted);
   line-height: 1.55;
+}
+
+.timeline-detail-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.58;
+}
+
+.timeline-detail-list li + li {
+  margin-top: 10px;
 }
 
 .project-detail-list li + li {
@@ -944,9 +1002,20 @@ h2 {
     flex-wrap: wrap;
   }
 
+  .site-actions {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .brand-avatar {
     width: 34px;
     height: 34px;
+  }
+
+  .github-link {
+    min-width: 0;
   }
 
   h1 {
