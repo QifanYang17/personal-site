@@ -68,12 +68,29 @@ const translations = {
       "Designed a lightweight i18n system with real-time Chinese/English switching and runtime TabBar updates.",
     project4Detail4:
       "Developed Canvas-based health trend charts and accessibility-focused UX for elderly users.",
+    project4Alt: "RxPal medication management mobile interface",
+    project1Meta:
+      "Jan 2026 - Mar 2026 · Independent Project · LangGraph, LangChain, OpenAI, Python",
     project1Title: "LLM Multi-Agent Insurance Claims System",
     project1Body:
-      "Designed a LangGraph-based multi-agent workflow for insurance claims, combining policy verification, multimodal damage assessment, payout estimation, and state-driven orchestration.",
+      "Designed and implemented an insurance claims multi-agent system with a BPMN-like workflow architecture, coordinating specialized agents across policy validation, damage assessment, authorization, claims processing, and notifications.",
+    project1Detail1:
+      "Built a RAG-based document QA workflow for insurance policy retrieval using document parsing, chunking, and context injection.",
+    project1Detail2:
+      "Developed a multimodal vehicle damage assessment agent with GPT-4o-mini to analyze accident images and generate payout-oriented evaluation reports.",
+    project1Detail3:
+      "Implemented a PyMuPDF document parsing pipeline to extract key fields from policy PDFs for automated policy validation.",
+    project1Detail4:
+      "Designed a state-driven orchestration mechanism so the full claims workflow follows approval logic deterministically.",
+    project1Detail5:
+      "Implemented tool-calling so LLM agents can invoke external tools for parsing, payment checks, and claims data processing.",
     project2Title: "Chicago Crime Data Visualization",
     project2Body:
       "Queried and processed crime data with PostgreSQL and Pandas, built Folium choropleth maps, identified high-risk blocks, and analyzed violent crime trends with rolling-window time series methods.",
+    project2Alt:
+      "Chicago crime map visualization with choropleth and highlighted locations",
+    project2Alt2:
+      "Chicago crime analysis map with district-level overlays and highlighted points",
     project3Title: "Data Science & Machine Learning Modeling Projects",
     project3Body:
       "Developed end-to-end pipelines for housing price prediction, retail sales analysis, public health datasets, and image recognition, covering data acquisition, EDA, feature engineering, ML modeling, deep learning, and model evaluation.",
@@ -90,6 +107,8 @@ const translations = {
     research1Title: "DETR Architecture Study & Implementation",
     research1Body:
       "Studied and implemented the DETR (Detection Transformer) architecture, analyzing encoder-decoder transformers, multi-head attention, QKV projections, and feed-forward networks to understand end-to-end transformer-based object detection without anchor boxes or NMS.",
+    research1Alt:
+      "Object detection example with labeled cars, person, bicycle, and traffic light",
     research1Detail1: "Implemented the core encoder-decoder transformer flow to understand object queries and set prediction.",
     research1Detail2: "Analyzed multi-head attention, QKV projection logic, and FFN blocks at the module level.",
     research1Detail3: "Compared DETR's end-to-end design against anchor-based and NMS-dependent detection pipelines.",
@@ -101,6 +120,8 @@ const translations = {
     research2Title: "3D Occupancy Perception Research",
     research2Body:
       "Studied vision-based 3D occupancy prediction methods for autonomous driving, analyzing voxel scene representations, semantic occupancy prediction, annotation pipelines, and the trade-offs between different perception architectures.",
+    research2Alt:
+      "3D occupancy perception diagram from multi-camera images and LiDAR points",
     research2Detail1: "Studied semantic occupancy prediction from multi-view camera images and voxel-based scene representations.",
     research2Detail2: "Examined depth inference, voxel-grid computation cost, and LiDAR-derived annotation challenges.",
     research2Detail3: "Compared BEV-based, TPV-based, and voxel-based modeling paradigms across capability and efficiency.",
@@ -209,12 +230,27 @@ const translations = {
       "实现轻量级 i18n 方案，支持中英文实时切换，并在运行时动态更新 TabBar 标签。",
     project4Detail4:
       "基于 Canvas 2D API 开发多指标健康趋势图，并围绕老年用户做三档字体、大触控区和引导式教程优化。",
+    project4Alt: "RxPal 此间有序小程序中的用药管理页面",
+    project1Meta:
+      "2026.01 - 2026.03 · 独立项目 · LangGraph, LangChain, OpenAI, Python",
     project1Title: "LLM 多智能体保险理赔系统",
     project1Body:
-      "基于 LangGraph 设计保险理赔多智能体工作流，整合保单验证、多模态车辆损伤评估、赔付估算与状态驱动编排机制。",
+      "基于 LangGraph 与 LangChain 独立设计并实现保险理赔多智能体系统，搭建类似 BPMN 的业务流程架构，通过协同智能体完成保单验证、损伤评估、付款授权、理赔处理与通知流程。",
+    project1Detail1:
+      "构建 RAG 文档问答系统，通过文档解析、文本分块与上下文注入实现保单内容检索与精准问答。",
+    project1Detail2:
+      "构建多模态车辆损伤评估 Agent，使用 GPT-4o-mini 对事故车辆损伤严重程度进行评估，并生成包含赔付估算的保险评估报告。",
+    project1Detail3:
+      "使用 PyMuPDF 构建文档解析 pipeline，从保单 PDF 中提取关键字段，实现基于文档的保单自动验证流程。",
+    project1Detail4:
+      "设计 State-Driven Agent Orchestration 状态驱动编排机制，确保理赔流程严格按照审批逻辑执行。",
+    project1Detail5:
+      "实现 Tool Calling 机制，使 LLM 智能体能够调用外部工具进行文档解析、支付校验与数据处理。",
     project2Title: "芝加哥犯罪数据可视化",
     project2Body:
       "使用 PostgreSQL 与 Pandas 处理犯罪数据，构建 Folium 分级设色地图，识别高风险街区，并通过滚动窗口方法分析暴力犯罪趋势。",
+    project2Alt: "芝加哥犯罪数据地图可视化截图，包含分级设色和重点位置标注",
+    project2Alt2: "芝加哥犯罪分析地图截图，展示分区叠层与重点位置标注",
     project3Title: "数据科学与机器学习建模项目",
     project3Body:
       "围绕房价预测、零售销售分析、公共健康数据与图像识别任务，搭建完整数据科学与机器学习流程，覆盖数据采集、EDA、特征工程、机器学习建模、深度学习训练与模型评估。",
@@ -231,6 +267,7 @@ const translations = {
     research1Title: "DETR 架构研究与实现",
     research1Body:
       "研究并实现 DETR（Detection Transformer）架构，分析 encoder-decoder Transformer、多头注意力、QKV 投影和前馈网络（FFN），理解在无需 anchor boxes 或 NMS 的情况下如何完成端到端 Transformer 目标检测。",
+    research1Alt: "目标检测示例图，标注了车辆、行人、自行车和交通灯",
     research1Detail1: "实现核心 encoder-decoder Transformer 流程，理解 object queries 与 set prediction 机制。",
     research1Detail2: "从模块层面分析 multi-head attention、QKV 投影逻辑与 FFN 结构。",
     research1Detail3: "对比 DETR 与依赖 anchor boxes 和 NMS 的传统检测流程之间的差异。",
@@ -242,6 +279,7 @@ const translations = {
     research2Title: "三维 Occupancy 感知研究",
     research2Body:
       "围绕自动驾驶中的视觉 3D occupancy prediction 方法开展研究，分析 voxel 场景表示、semantic occupancy prediction、标注流程以及不同三维感知架构之间的能力与效率权衡。",
+    research2Alt: "三维 Occupancy 感知示意图，展示多相机图像、激光点云与生成的占据空间",
     research2Detail1: "研究基于多视角相机图像的 semantic occupancy prediction 与 voxel 场景表示方法。",
     research2Detail2: "分析从 2D 图像恢复深度、3D voxel 网格计算成本以及基于 LiDAR 点云的大规模标注挑战。",
     research2Detail3: "比较 BEV-based、TPV-based 与 voxel-based 架构在表达能力和计算效率上的取舍。",
@@ -285,6 +323,7 @@ const translations = {
 
 const toggle = document.querySelector(".lang-toggle");
 const translatableNodes = document.querySelectorAll("[data-i18n]");
+const translatableAltNodes = document.querySelectorAll("[data-i18n-alt]");
 const descriptionTag = document.querySelector('meta[name="description"]');
 
 let language = "en";
@@ -304,6 +343,14 @@ function applyLanguage(nextLanguage) {
     const value = translations[nextLanguage][key];
     if (value) {
       node.textContent = value;
+    }
+  }
+
+  for (const node of translatableAltNodes) {
+    const key = node.dataset.i18nAlt;
+    const value = translations[nextLanguage][key];
+    if (value) {
+      node.setAttribute("alt", value);
     }
   }
 

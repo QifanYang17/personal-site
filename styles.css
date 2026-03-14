@@ -344,8 +344,7 @@ html[lang="zh-CN"] .floating-note {
   background: #54d657;
 }
 
-.content-grid,
-.project-layout {
+.content-grid {
   display: grid;
   gap: 18px;
   margin-top: 18px;
@@ -353,10 +352,6 @@ html[lang="zh-CN"] .floating-note {
 
 .content-grid {
   grid-template-columns: 1.45fr 0.95fr;
-}
-
-.project-layout {
-  grid-template-columns: 1.2fr 0.8fr;
 }
 
 .panel {
@@ -380,7 +375,7 @@ h2 {
 .timeline-item p,
 .project-card p,
 .research-card p,
-.education-list p {
+.education-strip-card p {
   color: var(--muted);
   line-height: 1.68;
   font-size: 16px;
@@ -441,6 +436,36 @@ h2 {
   background: rgba(255, 255, 255, 0.6);
 }
 
+.timeline-header {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.timeline-logo-frame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 34px;
+  flex: 0 0 auto;
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.timeline-logo {
+  width: 48px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.timeline-header-copy {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
 .timeline-meta {
   display: flex;
   justify-content: space-between;
@@ -453,7 +478,7 @@ h2 {
 .timeline-item h3,
 .project-card h3,
 .research-card h3,
-.education-list h3,
+.education-strip-card h3,
 .skills-block h3 {
   margin-bottom: 10px;
   font-size: 24px;
@@ -463,7 +488,9 @@ h2 {
 
 .project-cards {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
+  align-items: start;
 }
 
 .project-card {
@@ -471,6 +498,90 @@ h2 {
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.58);
   border: 1px solid var(--line);
+}
+
+.project-card-showcase {
+  grid-column: 1 / -1;
+  background: linear-gradient(180deg, rgba(248, 249, 245, 0.94), rgba(238, 242, 238, 0.86));
+}
+
+.project-card-showcase-grid {
+  display: grid;
+  grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.project-card-copy {
+  min-width: 0;
+}
+
+.project-meta {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.card-media {
+  position: relative;
+  overflow: hidden;
+  margin: 14px 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(244, 245, 242, 0.98), rgba(233, 236, 233, 0.92));
+}
+
+.project-card-showcase .card-media {
+  margin: 0;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.card-media-landscape {
+  aspect-ratio: 16 / 9;
+}
+
+.card-media-research {
+  aspect-ratio: 4 / 3;
+}
+
+.card-media-landscape img,
+.card-media-research img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-media-diagram {
+  aspect-ratio: 16 / 10;
+  padding: 14px;
+}
+
+.card-media-diagram img {
+  object-fit: contain;
+}
+
+.card-media-phone {
+  width: min(100%, 220px);
+  aspect-ratio: 10 / 18;
+  justify-self: start;
+  padding: 12px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.9), transparent 36%),
+    linear-gradient(180deg, rgba(180, 204, 190, 0.95), rgba(241, 243, 240, 0.98));
+  box-shadow: 0 18px 34px rgba(26, 31, 27, 0.08);
+}
+
+.card-media-phone img {
+  object-fit: contain;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .project-detail-list {
@@ -482,6 +593,20 @@ h2 {
 
 .project-detail-list li + li {
   margin-top: 10px;
+}
+
+.project-card-chicago {
+  grid-row: span 2;
+}
+
+.project-media-stack {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.project-media-stack .card-media {
+  margin: 0;
 }
 
 .research-panel {
@@ -527,12 +652,19 @@ h2 {
   font-weight: 700;
 }
 
-.education-list {
-  display: grid;
-  gap: 16px;
+.education-panel-wide,
+.project-panel {
+  margin-top: 18px;
 }
 
-.education-list article,
+.education-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.education-strip-card,
 .skills-block {
   padding: 18px 20px;
   border-radius: 20px;
@@ -542,6 +674,34 @@ h2 {
 
 .skills-block {
   margin-top: 18px;
+}
+
+.education-strip-grid .skills-block {
+  margin-top: 0;
+}
+
+.education-card-head {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.education-logo-frame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.education-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .contact-panel {
@@ -705,13 +865,25 @@ h2 {
 }
 
 @media (max-width: 980px) {
-  .content-grid,
-  .project-layout {
+  .content-grid {
     grid-template-columns: 1fr;
   }
 
   .research-grid {
     grid-template-columns: 1fr;
+  }
+
+  .education-strip-grid,
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-chicago {
+    grid-row: auto;
   }
 
   .hero-panel {
@@ -743,6 +915,11 @@ h2 {
 
   .stack-card-green {
     right: 0;
+  }
+
+  .card-media-phone {
+    width: min(100%, 240px);
+    justify-self: center;
   }
 
 }
@@ -817,6 +994,10 @@ h2 {
     flex-direction: column;
   }
 
+  .timeline-header {
+    gap: 10px;
+  }
+
   .contact-row {
     flex-direction: column;
     align-items: flex-start;
@@ -883,5 +1064,33 @@ h2 {
   .project-detail-list,
   .focus-list {
     padding-left: 16px;
+  }
+
+  .card-media {
+    margin: 12px 0 16px;
+  }
+
+  .card-media-phone {
+    width: min(100%, 230px);
+    padding: 10px;
+  }
+
+  .education-card-head {
+    gap: 10px;
+  }
+
+  .education-logo-frame {
+    width: 38px;
+    height: 38px;
+  }
+
+  .education-logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .card-media-diagram {
+    aspect-ratio: 4 / 3;
+    padding: 10px;
   }
 }
