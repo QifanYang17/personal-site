@@ -53,7 +53,7 @@ const translations = {
     exp1Detail3:
       "Developed reusable Python scripts for multi-million JSON and sensor datasets, implementing parsing, timestamp alignment, rule-based validation, time-series filtering, and metadata extraction to improve data integrity and reduce preprocessing latency by around 10%.",
     exp1Detail4:
-      "Trained a YOLOv9 object detection model with OpenCV on million-level autonomous driving image data, reaching 94% accuracy and 93% recall.",
+      "Preprocessed traffic image datasets with OpenCV and trained YOLOv9 object detection model with PyTorch, getting 94% accuracy and 93% recall.",
     exp2Company: "Bosch Powertrain Systems Co., Ltd.",
     exp2Date: "Jun 2023 - Sep 2023",
     exp2Title: "Vehicle Driving Data Analyst Intern",
@@ -77,7 +77,7 @@ const translations = {
     exp3Detail3:
       "Built a data science modeling pipeline to predict user demand and operational metrics, applying LASSO and ElasticNet regularization with PCA for feature selection and dimensionality reduction.",
     exp3Detail4:
-      "Trained and compared Random Forest, Gradient Boosting, and CNN models, improving model generalization through K-fold cross-validation and hyperparameter tuning.",
+      "Trained and compared Random Forest, Gradient Boosting, and MLP models, improving model generalization through K-fold cross-validation and hyperparameter tuning.",
     exp3Detail5:
       "Evaluated models with MAE, RMSE, ROC-AUC, and F1 Score, and developed Matplotlib-based KPI visualizations to analyze operational trends.",
     projectsTag: "Projects",
@@ -129,12 +129,12 @@ const translations = {
     researchTitle: "Research studies in transformers, 3D perception, and autonomous driving.",
     research1Kicker: "Independent Study",
     research1Meta: "Computer Vision · Transformers",
-    research1Title: "DETR Architecture Study & Implementation",
+    research1Title: "DETR Architecture Study",
     research1Body:
-      "Studied and implemented the DETR (Detection Transformer) architecture, analyzing encoder-decoder transformers, multi-head attention, QKV projections, and feed-forward networks to understand end-to-end transformer-based object detection without anchor boxes or NMS.",
+      "Studied the DETR (Detection Transformer) architecture, analyzing encoder-decoder transformers, multi-head attention, QKV projections, and feed-forward networks to understand end-to-end transformer-based object detection without anchor boxes or NMS.",
     research1Alt:
       "Object detection example with labeled cars, person, bicycle, and traffic light",
-    research1Detail1: "Implemented the core encoder-decoder transformer flow to understand object queries and set prediction.",
+    research1Detail1: "Researched the core encoder-decoder transformer flow to understand object queries and set prediction.",
     research1Detail2: "Analyzed multi-head attention, QKV projection logic, and FFN blocks at the module level.",
     research1Detail3: "Compared DETR's end-to-end design against anchor-based and NMS-dependent detection pipelines.",
     research1Chip2: "Transformers",
@@ -240,7 +240,7 @@ const translations = {
     exp1Detail3:
       "开发多种可复用 Python 脚本处理数百万级 JSON 与传感器数据集，实施解析、时间戳对齐、基于规则的校验、时间序列过滤与元数据提取，提升数据完整性并将预处理延迟降低约 10%。",
     exp1Detail4:
-      "使用 OpenCV 在百万级自动驾驶图像数据集上训练 YOLOv9 目标检测模型，达到 94% 精确度与 93% 召回率。",
+      "使用OpenCV预处理交通图像数据集，基于PyTorch框架训练YOLOv9目标检测模型，达到94%精确度与93%召回率。",
     exp2Company: "博世动力总成有限公司",
     exp2Date: "2023.06 - 2023.09",
     exp2Title: "博世 车辆驾驶数据分析实习生",
@@ -264,7 +264,7 @@ const translations = {
     exp3Detail3:
       "构建数据科学建模流程对用户需求与运营指标进行预测建模，应用 LASSO / ElasticNet 正则化与 PCA 进行特征选择与降维。",
     exp3Detail4:
-      "训练并比较 Random Forest / Gradient Boosting 和 CNN 等模型，并通过 K-fold 交叉验证与超参数调优提升模型泛化能力。",
+      "训练并比较 Random Forest / Gradient Boosting 和 MLP 等模型，并通过 K-fold 交叉验证与超参数调优提升模型泛化能力。",
     exp3Detail5:
       "使用 MAE、RMSE、ROC-AUC 与 F1 Score 进行模型评估，并利用 Matplotlib 构建运营 KPI 可视化与运营趋势分析。",
     projectsTag: "项目",
@@ -314,11 +314,11 @@ const translations = {
     researchTitle: "围绕 Transformer、3D感知与自动驾驶方向的研究学习",
     research1Kicker: "独立研究",
     research1Meta: "计算机视觉 · Transformer",
-    research1Title: "DETR 架构研究与实现",
+    research1Title: "DETR 架构研究",
     research1Body:
-      "研究并实现 DETR（Detection Transformer）架构，分析 encoder-decoder Transformer、多头注意力、QKV 投影和前馈网络（FFN），理解在无需 anchor boxes 或 NMS 的情况下如何完成端到端 Transformer 目标检测。",
+      "研究 DETR（Detection Transformer）架构，分析 encoder-decoder Transformer、多头注意力、QKV 投影和前馈网络（FFN），理解在无需 anchor boxes 或 NMS 的情况下如何完成端到端 Transformer 目标检测。",
     research1Alt: "目标检测示例图，标注了车辆、行人、自行车和交通灯",
-    research1Detail1: "实现核心 encoder-decoder Transformer 流程，理解 object queries 与 set prediction 机制。",
+    research1Detail1: "研究核心 encoder-decoder Transformer 流程，理解 object queries 与 set prediction 机制。",
     research1Detail2: "从模块层面分析 multi-head attention、QKV 投影逻辑与 FFN 结构。",
     research1Detail3: "对比 DETR 与依赖 anchor boxes 和 NMS 的传统检测流程之间的差异。",
     research1Chip2: "Transformer",
